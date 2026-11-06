@@ -1,13 +1,21 @@
-# Python / backend
+# Secrets: never commit real values. Keep the examples.
+.env
+.env.*
+!.env.example
+
+# Python
 .venv/
 __pycache__/
 *.pyc
+.pytest_cache/
 
-# Node / frontend
+# Node / Next.js
 node_modules/
 .next/
 out/
+next-env.d.ts
 
-# Environment files (may contain secrets)
-.env
-.env.local
+# Editors and OS
+.DS_Store
+.vscode/
+.idea/
